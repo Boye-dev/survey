@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="surv/styles.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <title>Boye Survey</title>
+</head>
+
+<body>
+  <div class="survey container-fluid">
+    <h1 id="title">Computer Use Survey</h1>
+    <p id="description">
+      <em>Testing for computer usage.</em>
+    </p>
+    </div>
+        <form id="survey-form">
+          <div class="forms">
+          <label for="name"id="name-label">
+            Name
+          </label>
+          <input id="name"type="text" placeholder="Enter Name" name="Name" value="" required />
+          <label for="email"id="email-label">
+            Email
+          </label>
+          <input id="email"type="email" placeholder="Enter Email" name="Email" value="" required />
+          <label for="age"id="number-label">
+            Age
+          </label>
+          <input id="number"type="number" placeholder="Enter Age" name="age" value=""min="1"max="80"required />
+          <p class="question">
+            Are you a Male or Female?
+          </p>
+          <input type="radio"name="gender" value="" required />
+          <label class="radio-owned"for="gender">Male</label><br />
+          <input type="radio"name="gender" value="" required />
+          <label class="radio-owned"for="gender">Female</label>
+          <p class="question">
+            Do you own a home computer?
+          </p>
+          <input type="radio"name="home" value="" required />
+          <label class="radio-owned"for="home">Yes</label><br />
+          <input type="radio"name="home" value="" required />
+          <label class="radio-owned"for="home">No</label>
+          <p class="question">
+            Do you own a laptop computer?
+          </p>
+          <input type="radio"name="laptop" value="" required />
+          <label class="radio-owned"for="laptop">Yes</label><br />
+          <input type="radio"name="laptop" value="" required />
+          <label class="radio-owned"for="laptop">No</label>
+          <p class="question">
+            Do you own a handheld computer?
+          </p>
+          <input type="radio"name="handheld" value="" required />
+          <label class="radio-owned"for="handheld">Yes</label><br />
+          <input type="radio"name="handheld" value="" required />
+          <label class="radio-owned"for="handheld">No</label>
+          <label for="comp"id="typeof">
+            What type of home computer do you use?
+          </label>
+          <input id="home"type="text" placeholder="Enter Type" name="comp" value="" required />
+          <label for="aver"id="average">
+             How often do you use your home computer in an average week?
+          </label>
+          <input id="aver"type="text" placeholder="Enter Average" name="aver" value="" required />
+          <p class="question">
+           For which of the following purposes do you use your home computer? <em>(Check as many as apply)</em>
+          </p>
+          <input type="checkbox"id="fm"name="fina"value="financial" />
+          <label class="radio-owned"for="fina">Financial Management</label><br />
+          <input type="checkbox"id="wp"name="word"value="wordp" />
+          <label class="radio-owned"for="word">Word Processing</label><br />
+          <input type="checkbox"id="ia"name="int"value="internet" />
+          <label class="radio-owned"for="int">Internet/Online Activities</label><br />
+          <input type="checkbox"id="gm"name="game"value="gaming" />
+          <label class="radio-owned"for="game">Gaming</label><br />
+          <input type="checkbox"id="hb"name="busi"value="business" />
+          <label class="radio-owned"for="busi">Home Business</label><br />
+          <input type="checkbox"id="ot"name="oth"value="other" />
+          <label class="radio-owned"for="oth">Other</label><br />
+          <p class="question">
+           What is the MAIN reason you connect to the internet?
+          </p>
+          <select id="internet" required>
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="chat">
+              Chat Rooms
+              </option>
+              <option value="e-mail">
+                E-mail
+                </option>
+                <option value="research">
+                  Research
+                  </option>
+                  <option value="shopping">
+                    Shopping
+                    </option>
+                    <option value="bills">
+                      Pay Bills
+                      </option>
+                      <option value="bank">
+                        Banking
+                        </option>
+                        <option value="og">
+                          Online Gaming
+                          </option>
+                          <option value="oe">
+                            Online Education
+                            </option>
+                            <option value="ot-her">
+                              Other
+                              </option>
+          </select>
+          <label for="suggest">
+            Any Extra Information?
+          </label>
+          <textarea name="suggest" placeholder="Message" required></textarea>
+          <button id="submit"class="btn btn-secondary" type="submit">Submit</button>
+          </div>
+
+        </form>
+        <footer>
+          <p class="foot">
+            <em>Oyelola Adeboye| © 2021 All Rights Reserved</em>
+            </p>
+          </footer>
+
+</body>
